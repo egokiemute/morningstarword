@@ -1008,6 +1008,7 @@ header.main-header .header-sticky.active{
 	object-fit: cover;
 	border: 8px solid var(--white-color);
 	border-radius: 0 0 100px 0;
+	height: 420px;
 }
 
 .about-content{
