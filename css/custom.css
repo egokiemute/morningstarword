@@ -2631,11 +2631,11 @@ header.main-header .header-sticky.active{
 }
 
 .what-we-item .icon-box{
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 
 .what-we-item .icon-box img{
-	max-width: 80px;
+	max-width: 60px;
 }
 
 .what-we-content h3{
@@ -2676,6 +2676,7 @@ header.main-header .header-sticky.active{
 	border-radius: 0 0 80px 0;
 	margin-bottom: 20px;
 	z-index: 1;
+	height: 450px;
 }
 
 .team-image img{
@@ -2802,7 +2803,7 @@ header.main-header .header-sticky.active{
 }
 
 .pastors-signature-img img{
-	max-width: 170px;
+	max-width: 400px;
 }
 
 .pastors-signature-content p{
