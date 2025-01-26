@@ -5438,7 +5438,7 @@ header.main-header .header-sticky.active{
 
 	.about-image{
         max-width: 100%;
-		padding-top: 50px;
+		padding-top: 75px;
     }
 
 	.about-img-1{
@@ -5447,6 +5447,10 @@ header.main-header .header-sticky.active{
 
 	.about-img-2{
 		width: 200px;
+	}
+
+	.about-img-2 img{
+		height: 350px;
 	}
 
 	.about-img-2 figure,
