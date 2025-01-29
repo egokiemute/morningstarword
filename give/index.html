@@ -19,19 +19,6 @@
       href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
       rel="stylesheet"
     />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .account-card {
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            padding: 15px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin: 10px;
-        }
-        .copy-btn {
-            font-size: 14px;
-        }
-    </style>
     <!-- Bootstrap Css -->
     <link href="../css/bootstrap.min.css" rel="stylesheet" media="screen" />
     <!-- SlickNav Css -->
@@ -120,7 +107,9 @@
           <div class="col-lg-12">
             <!-- Page Header Box Start -->
             <div class="page-header-box">
-              <h1 class="text-anime-style-2" data-cursor="-opaque">sermons</h1>
+              <h1 class="text-anime-style-2" data-cursor="-opaque">YOUR GENEROSITY.<br>
+                OUR MISSION</h1>
+                <p style="color: white;">Give towards our mission to reach a billion souls in ten thousand cities with the message of the gospel.</p>
               <nav class="wow fadeInUp">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item">
@@ -142,30 +131,110 @@
     <!-- Page Sermons Start -->
     <div class="page-sermons">
       <div class="container">
-        <div class="container my-5">
-          <h2 class="text-center mb-4">Support Our Ministry</h2>
-          <p class="text-center">You can give using the following accounts:</p>
-          <div class="row justify-content-center">
-              <!-- Naira Account -->
-              <div class="col-md-5 account-card">
-                  <h5 class="text-primary">Naira Account</h5>
-                  <p><strong>Bank Name:</strong> Access Bank</p>
-                  <p><strong>Account Name:</strong> Morningstar Covenant Int'l Church</p>
-                  <p><strong>Account Number:</strong> 1234567890</p>
-                  <button class="btn btn-outline-primary copy-btn" onclick="copyText('1234567890')">Copy Account Number</button>
-              </div>
-  
-              <!-- Domiciliary Account -->
-              <div class="col-md-5 account-card">
-                  <h5 class="text-primary">Domiciliary Account</h5>
-                  <p><strong>Bank Name:</strong> Zenith Bank</p>
-                  <p><strong>Account Name:</strong> Morningstar Covenant Int'l Church</p>
-                  <p><strong>Account Number:</strong> 9876543210</p>
-                  <p><strong>Currency:</strong> USD</p>
-                  <button class="btn btn-outline-primary copy-btn" onclick="copyText('9876543210')">Copy Account Number</button>
-              </div>
+        <div class="about-content">
+        <h3 class="wow fadeInUp">GIVING</h3>
+        <h1 class="mb-4 text-anime-style-2">WAYS TO GIVE</h1>
+        <p class="wow">Join us as we put our money right where our faith is, partnering with God for the spread of the gospel in our day.</p>
+
+        <div class="accordion" id="givingAccordion">
+            <!-- Headquarters Section -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="hqHeading">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#hqCollapse" aria-expanded="false">
+                        You can give in Naira and Other Currency
+                    </button>
+                </h2>
+                <div id="hqCollapse" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <div class="accordion" id="hqAccounts">
+                            <!-- Naira Account Section -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nairaHeading">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nairaCollapse">
+                                        Naira Account
+                                    </button>
+                                </h2>
+                                <div id="nairaCollapse" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <div class="row justify-content-center">
+                                            <div class="col-md-5 account-card">
+                                                <h5 class="text-primary">Tithe & Offering</h5>
+                                                <p><strong>Bank Name:</strong> Access Bank</p>
+                                                <p><strong>Account Name:</strong> Morningstar Covenant Int'l Church</p>
+                                                <p><strong>Account Number:</strong> 1234567890</p>
+                                                <button class="btn btn-outline-primary copy-btn" onclick="copyText('1234567890')">Copy</button>
+                                            </div>
+                                            <div class="col-md-5 account-card">
+                                                <h5 class="text-primary">Partnership</h5>
+                                                <p><strong>Bank Name:</strong> Zenith Bank</p>
+                                                <p><strong>Account Name:</strong> Morningstar Covenant Int'l Church</p>
+                                                <p><strong>Account Number:</strong> 0987654321</p>
+                                                <button class="btn btn-outline-primary copy-btn" onclick="copyText('0987654321')">Copy</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Domiciliary Account Section -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="domiciliaryHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#domiciliaryCollapse">
+                                        Domiciliary Account
+                                    </button>
+                                </h2>
+                                <div id="domiciliaryCollapse" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <div class="row justify-content-center">
+                                            <div class="col-md-5 account-card">
+                                                <h5 class="text-primary">USD Account</h5>
+                                                <p><strong>Bank Name:</strong> GTBank</p>
+                                                <p><strong>Account Name:</strong> Morningstar Covenant Int'l Church</p>
+                                                <p><strong>Account Number:</strong> 1122334455</p>
+                                                <p><strong>Sort Code:</strong> 123456</p>
+                                                <button class="btn btn-outline-primary copy-btn" onclick="copyText('1122334455')">Copy</button>
+                                            </div>
+                                            <div class="col-md-5 account-card">
+                                                <h5 class="text-primary">Euro Account</h5>
+                                                <p><strong>Bank Name:</strong> First Bank</p>
+                                                <p><strong>Account Name:</strong> Morningstar Covenant Int'l Church</p>
+                                                <p><strong>Account Number:</strong> 5566778899</p>
+                                                <p><strong>Sort Code:</strong> 654321</p>
+                                                <button class="btn btn-outline-primary copy-btn" onclick="copyText('5566778899')">Copy</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+
+            <!-- Branches Section -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="branchesHeading">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#branchesCollapse">
+                        You can also support what God is doing in our Branches
+                    </button>
+                </h2>
+                <div id="branchesCollapse" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <h4 class="text-center mb-3">Select a Branch</h4>
+                        <div class="text-center mb-3">
+                            <select class="form-select w-50 mx-auto" id="branchSelect" onchange="showBranchDetails()">
+                                <option value="">Select a Branch</option>
+                                <option value="oghara">MSCC Oghara</option>
+                                <option value="ovwian">MSCC Ovwian</option>
+                                <option value="agbarho">MSCC Agbarho</option>
+                            </select>
+                        </div>
+                        <div id="branchDetails" class="text-center"></div>
+                    </div>
+                </div>
+            </div>
           </div>
-      </div>
+        </div>
       </div>
     </div>
     <!-- Page Sermons End -->
@@ -186,24 +255,23 @@
               <!-- About Footer Content Start -->
               <div class="about-footer-content">
                 <p>
-                  Lorem Ipsum is simply dummy text of printing and typesetting
-                  industry. Lorem Ipsum has been the industry's.
+                  A vibrant, Christ-centered, Spirit-filled church where Jesus reigns as Lord. Passionate about winning and nurturing souls, we create a spiritually rich atmosphere for true fellowship.
                 </p>
               </div>
               <!-- Footer Social Links Start -->
               <div class="footer-social-links">
                 <ul>
                   <li>
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://web.facebook.com/morningstarword"><i class="fa-brands fa-facebook-f"></i></a>
                   </li>
                   <li>
-                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.tiktok.com/@morningstarword_"><i class="fa-brands fa-tiktok"></i></a>
                   </li>
                   <li>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.youtube.com/@morningstarword"><i class="fa-brands fa-youtube"></i></a>
                   </li>
                   <li>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/morningstarword/#"><i class="fa-brands fa-instagram"></i></a>
                   </li>
                 </ul>
               </div>
@@ -232,7 +300,7 @@
             <div class="footer-links">
               <h3>our services</h3>
               <ul>
-                <li><a href="#">support groups</a></li>
+                <li><a href="#">Cell Meetings</a></li>
                 <li><a href="#">special events</a></li>
                 <li><a href="#">online services</a></li>
                 <li><a href="#">pastoral care</a></li>
@@ -254,7 +322,7 @@
                     <img src="../images/icon-phone.svg" alt="" />
                   </div>
                   <div class="footer-info-box-content">
-                    <p>(+0) 789 345 012</p>
+                    <p>+234 806 639 5550</p>
                   </div>
                 </div>
                 <!-- Footer Info Box End -->
@@ -265,7 +333,7 @@
                     <img src="../images/icon-mail.svg" alt="" />
                   </div>
                   <div class="footer-info-box-content">
-                    <p>domain@gmail.com</p>
+                    <p>contact@morningstarword.org</p>
                   </div>
                 </div>
                 <!-- Footer Info Box End -->
@@ -276,7 +344,7 @@
                     <img src="../images/icon-location.svg" alt="" />
                   </div>
                   <div class="footer-info-box-content">
-                    <p>24/11 Robert Road,New York,USA</p>
+                    <p>#1 Dumez Close opp. Mosheshe Estate, Airport Road, Effurun</p>
                   </div>
                 </div>
                 <!-- Footer Info Box End -->
@@ -293,7 +361,7 @@
             <div class="col-lg-6 col-md-6">
               <!-- Footer Copyright Start -->
               <div class="footer-copyright-text">
-                <p>Copyright 2024 Avenix. All Rights Reserved.</p>
+                <p>Copyright 2024 MorningStar Covenant Int'l Church. All Rights Reserved.</p>
               </div>
               <!-- Footer Copyright End -->
             </div>
@@ -302,9 +370,9 @@
               <!-- Footer Social Link Start -->
               <div class="footer-privacy-policy">
                 <ul>
-                  <li><a href="#">term & condition</a></li>
-                  <li><a href="#">support</a></li>
-                  <li><a href="#">privacy policy</a></li>
+                  <li><a href="#">Our Pastors</a></li>
+                  <li><a href="#">Sermons</a></li>
+                  <li><a href="#">Events</a></li>
                 </ul>
               </div>
               <!-- Footer Social Link End -->
@@ -357,8 +425,38 @@
               alert("Account number copied: " + text);
           });
       }
+
+      function showBranchDetails() {
+          let branch = document.getElementById("branchSelect").value;
+          let details = {
+              oghara: `
+                  <div class="account-card">
+                      <h5 class="text-primary">MSCC Oghara</h5>
+                      <p><strong>Bank Name:</strong> First Bank</p>
+                      <p><strong>Account Name:</strong> MSCC Oghara</p>
+                      <p><strong>Account Number:</strong> 1122445566</p>
+                      <button class="btn btn-outline-primary copy-btn" onclick="copyText('1122445566')">Copy</button>
+                  </div>`,
+              ovwian: `
+                  <div class="account-card">
+                      <h5 class="text-primary">MSCC Ovwian</h5>
+                      <p><strong>Bank Name:</strong> UBA</p>
+                      <p><strong>Account Name:</strong> MSCC Ovwian</p>
+                      <p><strong>Account Number:</strong> 2233445566</p>
+                      <button class="btn btn-outline-primary copy-btn" onclick="copyText('2233445566')">Copy</button>
+                  </div>`,
+              agbarho: `
+                  <div class="account-card">
+                      <h5 class="text-primary">MSCC Agbarho</h5>
+                      <p><strong>Bank Name:</strong> Zenith Bank</p>
+                      <p><strong>Account Name:</strong> MSCC Agbarho</p>
+                      <p><strong>Account Number:</strong> 3344556677</p>
+                      <button class="btn btn-outline-primary copy-btn" onclick="copyText('3344556677')">Copy</button>
+                  </div>`
+          };
+          document.getElementById("branchDetails").innerHTML = details[branch] || "";
+      }
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
   </body>
 </html>
