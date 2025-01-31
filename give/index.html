@@ -132,125 +132,103 @@
     <div class="page-sermons">
       <div class="container">
         <div class="about-content">
-          <div class="container my-5">
-            <h2 class="text-center mb-4">Support Our Ministry</h2>
-            <p class="text-center">Choose where you want to give:</p>
-    
-            <!-- Accordion for Naira and Domiciliary Accounts -->
-            <div class="accordion" id="accordionExample">
-                <!-- Naira Account Section -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Tithe & Offering (Naira Account)
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p><strong>Bank Name:</strong> Access Bank</p>
-                            <p><strong>Account Name:</strong> Morningstar Covenant Int'l Church</p>
-                            <p><strong>Account Number:</strong> 1234567890</p>
-                            <button class="btn btn-outline-primary copy-btn" onclick="copyText('1234567890')">Copy</button>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Domiciliary Account Section -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Domiciliary Accounts (USD, Euro)
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <h6 class="text-primary">USD Account (Domiciliary)</h6>
-                            <p><strong>Bank Name:</strong> GTBank</p>
-                            <p><strong>Account Name:</strong> Morningstar Covenant Int'l Church</p>
-                            <p><strong>Account Number:</strong> 1122334455</p>
-                            <p><strong>Sort Code:</strong> 123456</p>
-                            <button class="btn btn-outline-primary copy-btn" onclick="copyText('1122334455')">Copy</button>
-    
-                            <h6 class="text-primary mt-3">Euro Account (Domiciliary)</h6>
-                            <p><strong>Bank Name:</strong> First Bank</p>
-                            <p><strong>Account Name:</strong> Morningstar Covenant Int'l Church</p>
-                            <p><strong>Account Number:</strong> 5566778899</p>
-                            <p><strong>Sort Code:</strong> 654321</p>
-                            <button class="btn btn-outline-primary copy-btn" onclick="copyText('5566778899')">Copy</button>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Branch Account Section -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Branch Accounts
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <!-- Branch Accordion -->
-                            <div class="accordion" id="branchAccordion">
-                                <!-- MSCC Oghara Branch -->
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="branchHeadingOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#branchCollapseOne" aria-expanded="true" aria-controls="branchCollapseOne">
-                                            MSCC Oghara
-                                        </button>
-                                    </h2>
-                                    <div id="branchCollapseOne" class="accordion-collapse collapse show" aria-labelledby="branchHeadingOne" data-bs-parent="#branchAccordion">
-                                        <div class="accordion-body">
-                                            <p><strong>Bank Name:</strong> First Bank</p>
-                                            <p><strong>Account Name:</strong> MSCC Oghara</p>
-                                            <p><strong>Account Number:</strong> 1122445566</p>
-                                            <button class="btn btn-outline-primary copy-btn" onclick="copyText('1122445566')">Copy</button>
-                                        </div>
-                                    </div>
-                                </div>
-    
-                                <!-- MSCC Ovwian Branch -->
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="branchHeadingTwo">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#branchCollapseTwo" aria-expanded="false" aria-controls="branchCollapseTwo">
-                                            MSCC Ovwian
-                                        </button>
-                                    </h2>
-                                    <div id="branchCollapseTwo" class="accordion-collapse collapse" aria-labelledby="branchHeadingTwo" data-bs-parent="#branchAccordion">
-                                        <div class="accordion-body">
-                                            <p><strong>Bank Name:</strong> UBA</p>
-                                            <p><strong>Account Name:</strong> MSCC Ovwian</p>
-                                            <p><strong>Account Number:</strong> 2233445566</p>
-                                            <button class="btn btn-outline-primary copy-btn" onclick="copyText('2233445566')">Copy</button>
-                                        </div>
-                                    </div>
-                                </div>
-    
-                                <!-- MSCC Agbarho Branch -->
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="branchHeadingThree">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#branchCollapseThree" aria-expanded="false" aria-controls="branchCollapseThree">
-                                            MSCC Agbarho
-                                        </button>
-                                    </h2>
-                                    <div id="branchCollapseThree" class="accordion-collapse collapse" aria-labelledby="branchHeadingThree" data-bs-parent="#branchAccordion">
-                                        <div class="accordion-body">
-                                            <p><strong>Bank Name:</strong> Zenith Bank</p>
-                                            <p><strong>Account Name:</strong> MSCC Agbarho</p>
-                                            <p><strong>Account Number:</strong> 3344556677</p>
-                                            <button class="btn btn-outline-primary copy-btn" onclick="copyText('3344556677')">Copy</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End of Branch Accordion -->
-                        </div>
-                    </div>
-                </div>
+            <div style="display: flex; width: 100%;">
+              <h1 class="title text-anime-style-2 col-lg-6">WAYS TO GIVE</h1>
+              <p style="text-align: right;" class="col-lg-6">
+                Join us as we put our money right where our faith is, <br>partnering with God for the spread of the gospel in our day.
+              </p>
             </div>
-        </div>
-        </div>
-      </div>
+
+            <!-- Toggle Buttons -->
+            <div class="toggle-buttons">
+              <button class="active btn-default" id="nairaBtn">Naira Account</button>
+              <button id="domiciliaryBtn" class="btn-default">Domiciliary Account</button>
+            </div>
+            
+
+            <!-- NAIRA ACCOUNT SECTION -->
+            <div class="content-section" id="nairaSection">
+              <div class="col-lg-6">
+                  <div class="accounts">
+                      <h3>Tithe & Offering</h3>
+                      <div class="account-box">
+                          <span>United Bank of Africa (UBA)</span>
+                          <strong>1026088995</strong>
+                          <button onclick="copyAccount('1026088995', this)">📋</button>
+                          <span class="copied">Copied!</span>
+                      </div>
+                      <div class="account-box">
+                        <span>Guranty Trust Bank (GTBank)</span>
+                        <strong>0106537647</strong>
+                        <button onclick="copyAccount('0106537647', this)">📋</button>
+                        <span class="copied">Copied!</span>
+                    </div>
+                  </div>
+
+                  <div class="accounts" style="margin-top: 20px;">
+                      <h3>Partnership Account</h3>
+                      <div class="account-box">
+                          <span>United Bank of Africa (UBA)</span>
+                          <strong>0144366216</strong>
+                          <button onclick="copyAccount('0144366216', this)">📋</button>
+                          <span class="copied">Copied!</span>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Paystack Payment Form -->
+              <div class="col-lg-6" style="height: 340px;" >
+                  <div class="paystack-box paystack-box_bg">
+                      <h3 style="color: white;">Give via Paystack</h3>
+                      <input type="text" id="payerName" placeholder="Enter your name">
+                      <input type="number" id="amount" placeholder="Enter amount">
+
+                      <select id="givingPurpose">
+                          <option value="Offering">Offering</option>
+                          <option value="Tithe">Tithe</option>
+                          <option value="Partnership">Partnership</option>
+                          <option value="Project">Project</option>
+                      </select>
+
+                      <button onclick="payWithPaystack()">Give Now →</button>
+                  </div>
+              </div>
+            </div>
+
+            <!-- DOMICILIARY ACCOUNTS -->
+            <div class="content-section_dom hidden" id="domiciliarySection">
+                  <div class="accounts" style="width: 100%;">
+                      <div class="sort-code" style="margin: 10px 0; text-align: center;">
+                        <h3>Domiciliary Accounts - UBA</h3>
+                      </div>
+                      <div class="account-box">
+                          <span>USD - Domiciliary</span>
+                          <strong>0679902947</strong>
+                          <button onclick="copyAccount('0679902947', this)">📋</button>
+                          <span class="copied">Copied!</span>
+                      </div>
+      
+                      <div class="account-box">
+                          <span>GBP - Domiciliary</span>
+                          <strong>0679944554</strong>
+                          <button onclick="copyAccount('0679944554', this)">📋</button>
+                          <span class="copied">Copied!</span>
+                      </div>
+      
+                      <div class="account-box">
+                          <span>EURO - Domiciliary</span>
+                          <strong>0679944561</strong>
+                          <button onclick="copyAccount('0679944561', this)">📋</button>
+                          <span class="copied">Copied!</span>
+                      </div>
+
+                      <div class="sort-code" style="margin-top: 20px;">
+                        <span>Sort Code: 058244119</span>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
     </div>
     <!-- Page Sermons End -->
 
@@ -433,15 +411,72 @@
     <!-- Main Custom js file -->
     <script src="../js/function.js"></script>
     <script src="../../assets/js/theme-panel.js"></script>
-    <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;9092ade6cd8573c2&quot;,&quot;version&quot;:&quot;2025.1.0&quot;,&quot;r&quot;:1,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;token&quot;:&quot;aa0c052e8c384291853752d88a1f1af5&quot;,&quot;b&quot;:1}" crossorigin="anonymous"></script>
     <script>
-      function copyText(text) {
-          navigator.clipboard.writeText(text).then(() => {
-              alert("Account number copied: " + text);
-          });
-      }
-  </script>
+      // Toggle Sections
+        document.getElementById("nairaBtn").addEventListener("click", function() {
+            document.getElementById("nairaSection").style.display = "flex";
+            document.getElementById("domiciliarySection").style.display = "none";
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            this.classList.add("active");
+            document.getElementById("domiciliaryBtn").classList.remove("active");
+        });
+
+        document.getElementById("domiciliaryBtn").addEventListener("click", function() {
+            document.getElementById("nairaSection").style.display = "none";
+            document.getElementById("domiciliarySection").style.display = "flex";
+
+            this.classList.add("active");
+            document.getElementById("nairaBtn").classList.remove("active");
+        });
+
+        // Copy Account Number
+        function copyAccount(accountNumber, button) {
+            navigator.clipboard.writeText(accountNumber);
+            let copiedMsg = button.nextElementSibling;
+            copiedMsg.style.display = "inline";
+            setTimeout(() => copiedMsg.style.display = "none", 1000);
+        }
+
+        // Pay with Paystack
+        function payWithPaystack() {
+            let name = document.getElementById("payerName").value;
+            let amount = document.getElementById("amount").value;
+            let purpose = document.getElementById("givingPurpose").value;
+
+            if (!name || !amount) {
+                alert("Please enter your name and amount.");
+                return;
+            }
+
+            let handler = PaystackPop.setup({
+                key: 'pk_test_6fdbe3e8699d9cab8d93dbd023005b27637706bd',
+                email: 'msccnigeria@gmail.com', 
+                amount: amount * 100,
+                currency: "NGN",
+                metadata: {
+                    custom_fields: [
+                        { display_name: "Donor Name", variable_name: "donor_name", value: name },
+                        { display_name: "Purpose", variable_name: "purpose", value: purpose }
+                    ]
+                },
+                callback: function(response) {
+                    alert("Payment Successful: " + response.reference);
+                }
+            });
+
+            handler.openIframe();
+        }
+
+        // Initialize with Naira section visible by default
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById("nairaSection").style.display = "flex";
+            document.getElementById("domiciliarySection").style.display = "none";
+            document.getElementById("nairaBtn").classList.add("active");
+            document.getElementById("domiciliaryBtn").classList.remove("active");
+        });
+    </script>
+
+    <!-- Paystack SDK -->
+    <script src="https://js.paystack.co/v1/inline.js"></script>
   </body>
 </html>
