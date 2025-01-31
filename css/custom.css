@@ -4916,7 +4916,7 @@ header.main-header .header-sticky.active{
 	}
 
 	.our-blog{
-		padding: 50px 0 20px;
+		padding: 500px 0 20px;
 	}
 
 	.blog-item .post-featured-image{
@@ -6057,39 +6057,46 @@ header.main-header .header-sticky.active{
 	display: flex;
 	justify-content: center;
 	margin: 20px 0;
+	flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+	gap: 10px;
+}
 
-}
 .toggle-buttons button {
-	margin: 10px;
+	padding: 10px 15px;
+	font-size: 14px;
+	width: 100%; /* Full width on small screens */
+	max-width: 200px; /* Limit width on larger screens */
 }
+
 .toggle-buttons button.active {
 	background: #d8303d;
 	color: white;
 }
-.content-section {
+
+/* Responsive Content Section */
+.content-section, .content-section_dom {
 	display: flex;
 	gap: 20px;
 	align-items: flex-start;
+	flex-wrap: wrap; /* Allow wrapping for small screens */
 }
 
-.content-section_dom{
-	display: flex;
-	gap: 20px;
-	align-items: flex-start;
-}
-
+/* Account and Paystack Box */
 .accounts, .paystack-box {
 	background: #fff1df;
 	padding: 20px;
 	border-radius: 8px;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-	height: 100%;
+	width: 100%; /* Make it full-width for small screens */
+	max-width: 600px; /* Prevent stretching too wide */
+	margin: auto; /* Center it on small screens */
 }
 
-.paystack-box_bg{
+.paystack-box_bg {
 	background: #1D3B52;
 }
 
+/* Account Box */
 .account-box {
 	display: flex;
 	align-items: center;
@@ -6099,26 +6106,28 @@ header.main-header .header-sticky.active{
 	border-radius: 5px;
 	margin-top: 10px;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	flex-wrap: wrap; /* Allow text to break on smaller screens */
 }
+
+/* Buttons inside account box */
 .account-box button {
 	background: transparent;
 	border: none;
 	cursor: pointer;
 	font-size: 16px;
 }
-.copied {
-	display: none;
-	color: green;
-	font-size: 12px;
-	margin-left: 10px;
-}
+
+/* Paystack Inputs and Selects */
 .paystack-box input, .paystack-box select {
 	width: 100%;
 	padding: 10px;
 	margin-top: 10px;
 	border-radius: 5px;
 	border: 1px solid #ccc;
+	font-size: 14px;
 }
+
+/* Paystack Button */
 .paystack-box button {
 	width: 100%;
 	background: #d8303d;
@@ -6129,7 +6138,43 @@ header.main-header .header-sticky.active{
 	margin-top: 10px;
 	cursor: pointer;
 	transition: 0.3s;
+	font-size: 14px;
 }
+
 .paystack-box button:hover {
 	background: #b51d29;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+	/* Make Sections Stack */
+	.content-section, .content-section_dom {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.account-box {
+		flex-direction: column;
+		align-items: flex-start;
+		display: inline-block;
+	}
+
+	.account-box strong {
+		font-size: 16px;
+		margin-top: 5px;
+	}
+
+	/* Center Toggle Buttons */
+	.toggle-buttons {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.toggle-buttons button {
+		width: 90%;
+	}
+	.accounts, .paystack-box{
+		width: 100%;
+		
+	}
 }
